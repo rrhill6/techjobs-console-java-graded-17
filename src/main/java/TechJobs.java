@@ -1,7 +1,6 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
+
+import static java.util.Objects.*;
 
 /**
  * Created by LaunchCode
@@ -62,7 +61,7 @@ public class TechJobs {
                 String searchTerm = in.nextLine();
 
                 if (searchField.equals("all")) {
-                    printJobs(JobData.findByValue(searchTerm));
+                    printJobs(requireNonNull(JobData.findByValue(searchTerm)));
                 } else {
                     printJobs(JobData.findByColumnAndValue(searchField, searchTerm));
                 }
