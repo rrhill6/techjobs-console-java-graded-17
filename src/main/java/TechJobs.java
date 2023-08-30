@@ -120,6 +120,7 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         if (someJobs.isEmpty()) {
             System.out.print("No Results");
+            //Call the findByValue() here?
         } else {
             for (HashMap<String, String> someJob : someJobs) {
                 System.out.print("*****\n");

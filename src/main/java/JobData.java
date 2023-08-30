@@ -107,11 +107,11 @@ public class JobData {
                     jobs.add(allJob);
                 }
             }
-            return jobs;
+//            return jobs;
         }
-      return null;
+//      return null;
+        return jobs;
     }
-
     /**
      * Read in data from a CSV file and store it in a list
      */
