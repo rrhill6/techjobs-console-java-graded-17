@@ -108,8 +108,8 @@ public class JobData {
                 }
             }
             return jobs;
-        }
-      return null;
+
+//      return null;
     }
 
     /**
